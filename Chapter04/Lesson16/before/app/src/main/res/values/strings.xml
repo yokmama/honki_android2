@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lesson16</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="text_irohani">いろはにほへと　ちりぬるを\nわかよたれそ　つねならむ\nうゐのおくやま　けふこえて\nあさきゆめみし　ゑひもせす</string>
+    <string name="label_scaletype">スケールタイプを選択</string>
+    <string name="button_apply_image">Buttonに画像をセットすると縦横比が崩れる</string>
+    <string name="imagebutton_apply_image1">ImageButtonだと正しい縦横比の表示になる</string>
+    <string name="imagebutton_apply_image2">アイコンのような画像ボタンも作成可能</string>
+
+    <string name="sample_subtitle_textview">TextViewを使った色々な装飾文字のサンプルを表示</string>
+    <string name="sample_subtitle_edittext">EditTextやTextInputLayoutを使った文字入力のサンプルを表示</string>
+    <string name="sample_subtitle_button">装飾したButtonやFloatingActionButtonのサンプルを表示</string>
+    <string name="sample_subtitle_radio">RadioButtonを使ったサンプルを表示</string>
+    <string name="sample_subtitle_checkbox">CheckBoxを使ったサンプルを表示</string>
+    <string name="sample_subtitle_switch">Switchを使ったサンプルを表示</string>
+    <string name="sample_subtitle_togglebutton">ToggleButtonを使ったサンプルを表示</string>
+    <string name="sample_subtitle_imagebutton">ImageButtonを使った画像付きボタンのサンプルを表示</string>
+    <string name="sample_subtitle_imageview">ImageViewを使った画像のサンプルを表示</string>
+    <string name="sample_subtitle_progressbar">ProgressBarを使った進捗のサンプルを表示</string>
+    <string name="sample_subtitle_seekbar">SeekBarを使ったサンプルを表示</string>
+    <string name="sample_subtitle_ratingbar">RatingBarを使ったサンプルを表示</string>
+    <string name="sample_subtitle_spinner">Spinnerを使ったサンプルを表示</string>
+    <string name="sample_subtitle_webview">WebViewによるWebサイトの表示をするサンプル</string>
+    <string name="sample_subtitle_toast">ToastとSnackbarのサンプルを表示</string>
+
+</resources>

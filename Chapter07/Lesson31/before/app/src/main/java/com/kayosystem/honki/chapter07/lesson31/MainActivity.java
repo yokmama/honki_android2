@@ -1,0 +1,128 @@
+package com.kayosystem.honki.chapter07.lesson31;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.StringRes;
+import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import com.kayosystem.honki.chapter07.lesson31.samples.grid.RecyclerViewGridActivity;
+import com.kayosystem.honki.chapter07.lesson31.samples.list.RecyclerViewListActivity;
+import com.kayosystem.honki.chapter07.lesson31.samples.staggered.RecyclerViewStaggeredActivity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * これは、アプリ起動時の画面のプログラムです。
+ * サンプルは、samplesパッケージ以下にある各種Activityを御覧ください。
+ */
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+
+    /**
+     * 画面のリスト
+     */
+    private static final List<Sample> list = new ArrayList<Sample>() {
+        {
+            add(new Sample(RecyclerViewListActivity.class, 0, R.string.sample_subtitle_list));
+            add(new Sample(RecyclerViewGridActivity.class, 0, R.string.sample_subtitle_grid));
+            add(new Sample(RecyclerViewStaggeredActivity.class, 0, R.string.sample_subtitle_staggered));
+        }
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        ListView listView = new ListView(this);
+        setContentView(listView);
+
+        listView.setOnItemClickListener(this);
+        listView.setAdapter(new MyAdapter());
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Sample sample = list.get(position);
+        Intent intent = new Intent(this, sample.clazz);
+        startActivity(intent);
+    }
+
+    private static class MyAdapter extends BaseAdapter {
+
+        @Override
+        public int getCount() {
+            return list.size();
+        }
+
+        @Override
+        public Sample getItem(int position) {
+            return list.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            Context context = parent.getContext();
+            Sample sample = list.get(position);
+
+            // ビューがまだなければ作る
+            if (convertView == null) {
+                LayoutInflater inflater = LayoutInflater.from(context);
+                convertView = inflater.inflate(android.R.layout.simple_list_item_2, parent, false);
+            }
+
+            // ビューの参照を取得
+            TextView titleView = (TextView) convertView.findViewById(android.R.id.text1);
+            TextView subtitleView = (TextView) convertView.findViewById(android.R.id.text2);
+
+            // 内容を設定
+            if (sample.title > 0) {
+                titleView.setText(context.getString(sample.title));
+            } else {
+                // もしクラス名が"xxActivity"であれば、Activityを除いた名前にする
+                String className = sample.clazz.getSimpleName();
+                int activityIndex = className.lastIndexOf("Activity");
+                if (activityIndex >= 0) {
+                    titleView.setText(className.substring(0, activityIndex));
+                } else {
+                    titleView.setText(className);
+                }
+            }
+            if (sample.subtitle > 0) {
+                subtitleView.setText(context.getString(sample.subtitle));
+            } else {
+                subtitleView.setText("");
+            }
+
+            return convertView;
+        }
+    }
+
+    private static class Sample {
+        Class<? extends Activity> clazz;
+        @StringRes
+        int title;
+        @StringRes
+        int subtitle;
+
+        public Sample(Class<? extends Activity> clazz, int title, int subtitle) {
+            this.clazz = clazz;
+            this.title = title;
+            this.subtitle = subtitle;
+        }
+    }
+
+}

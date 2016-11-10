@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FrameLayoutFragment">
+
+    <!--中央/下段に配置-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:src="@drawable/dog1" />
+
+    <!--上段/左に配置-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:alpha="0.9"
+        android:text="left | top"
+        android:textSize="9sp" />
+
+    <!--上段/中央に配置-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:alpha="0.9"
+        android:text="center_horizontal | top"
+        android:textSize="9sp" />
+
+    <!--上段/右に配置-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:alpha="0.9"
+        android:text="right | top"
+        android:textSize="9sp" />
+
+    <!--中段/左に配置-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:alpha="0.9"
+        android:text="left | center_vertical"
+        android:textSize="9sp" />
+
+    <!--中段/中央に配置-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="0.9"
+        android:text="center"
+        android:textSize="9sp" />
+
+    <!--中段/右に配置-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:alpha="0.9"
+        android:text="right | center_vertical"
+        android:textSize="9sp" />
+
+    <!--下段/左に追加-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:alpha="0.9"
+        android:text="left | bottom"
+        android:textSize="9sp" />
+
+    <!--下段/中央に追加-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:alpha="0.9"
+        android:text="center_horizontal | bottom"
+        android:textSize="9sp" />
+
+    <!--下段/右に追加-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:alpha="0.9"
+        android:text="right | bottom"
+        android:textSize="9sp" />
+
+</FrameLayout>

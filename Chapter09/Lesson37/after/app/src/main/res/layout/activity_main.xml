@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.kayosystem.honki.chapter09.lesson37.MainActivity">
+
+    <Button
+        android:id="@+id/launch_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/launch_second_activity" />
+
+    <Button
+        android:id="@+id/launch_activity_new_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/launch_second_activity_new_window" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/loglist_fragment"
+        android:name="com.kayosystem.honki.chapter09.lesson37.LogListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+
+        android:background="@android:color/white" />
+</LinearLayout>

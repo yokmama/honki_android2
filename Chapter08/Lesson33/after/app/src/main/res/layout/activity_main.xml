@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="保存フォルダ" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:checkedButton="@+id/radioInternalAppData">
+
+        <RadioButton
+            android:id="@+id/radioInternalAppData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内部ストレージ アプリデータ" />
+
+
+        <RadioButton
+            android:id="@+id/radioInternalAppCache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内部ストレージ アプリキャッシュ" />
+
+        <RadioButton
+            android:id="@+id/radioExternalAppData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="外部ストレージ アプリデータ" />
+
+
+        <RadioButton
+            android:id="@+id/radioExternalAppCache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="外部ストレージ アプリキャッシュ" />
+
+        <RadioButton
+            android:id="@+id/radioExternalShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="外部ストレージ 共有(書類フォルダ)" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="ファイルパス" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="temp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="テキストを入力してください" />
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="読み込み" />
+
+    <Button
+        android:id="@+id/btnWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="書き込み" />
+
+
+</LinearLayout>

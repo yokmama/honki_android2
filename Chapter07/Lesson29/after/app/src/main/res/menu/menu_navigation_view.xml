@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home_24dp"
+            android:title="ホーム"/>
+
+        <item
+            android:id="@+id/menu_todo"
+            android:icon="@drawable/ic_assignment_24dp"
+            android:title="マイタスク"/>
+    </group>
+    <item android:title="その他">
+        <menu android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/menu_settings"
+                android:title="設定"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="sample_subtitle_bottom_sheet">テキストやURLをシェアする時によく使われるUI</string>
+    <string name="sample_subtitle_navigation_view">メニューリソースを使ってリッチなメニューを表示</string>
+    <string name="sample_subtitle_snackbar">Toastのような、下から出てくるビュー</string>
+    <string name="sample_subtitle_text_input">アニメーションするEditText</string>
+    <string name="sample_subtitle_card">カードの用にリスト表示を行う</string>
+</resources>

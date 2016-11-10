@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lesson31</string>
+
+    <string name="sample_subtitle_list">RecyclerViewを使った、リスト型のサンプルです。</string>
+    <string name="sample_subtitle_grid">RecyclerViewを使った、グリッド型のサンプルです。</string>
+    <string name="sample_subtitle_staggered">RecyclerViewを使った、千鳥状のサンプルです。</string>
+</resources>

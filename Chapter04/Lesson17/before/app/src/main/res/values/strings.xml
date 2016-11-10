@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lesson17</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="text_message">下にひっぱるとインジケータが表示されます</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sample_subtitle_framelayout">FrameLayoutを使ったサンプルを表示</string>
+    <string name="sample_subtitle_linearlayout">LinearLayoutを使ったサンプルを表示</string>
+    <string name="sample_subtitle_tablelayout">TableLayoutを使ったサンプルを表示</string>
+    <string name="sample_subtitle_gridlayout">GridLayoutを使ったサンプルを表示</string>
+    <string name="sample_subtitle_relativelayout">RelativeLayoutを使ったサンプル１を表示</string>
+    <string name="sample_subtitle_relativelayout2">RelativeLayoutを使ったサンプル２を表示</string>
+    <string name="sample_subtitle_swiperefreshlayout">SwipeRefreshLayoutを使ったサンプルを表示</string>
+    <string name="sample_subtitle_tablayout">TabLayoutを使ったサンプルを表示</string>
+    <string name="sample_subtitle_coordinatorlayout">CoordinatorLayoutを使ったサンプルを表示</string>
+
+</resources>
