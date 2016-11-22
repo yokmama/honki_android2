@@ -28,4 +28,7 @@ Androidは、OSや開発環境ともに、とても速い速度で更新され�
 
 出版してからのソースコードの変更は[こちらから確認できます](https://github.com/yokmama/honki_android2/compare/first-release...master)。
 
+* 2016-11-22
+  * [Android Gradle Pluginのバージョン変更](https://github.com/yokmama/honki_android2/compare/first-release...v20161122)
+
 
